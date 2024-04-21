@@ -7,7 +7,7 @@
 - get package 
 
 ```
-go get https://github.com/fakovacic/amadeus
+go get https://github.com/wei-zero/amadeus
 ```
 
 ### Flight order creation
