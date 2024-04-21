@@ -54,6 +54,7 @@ type CabinRestrictions struct {
 	OriginDestinationIds []string `json:"originDestinationIds,omitempty"`
 }
 type CarrierRestrictions struct {
+	IncludedCarrierCodes []string `json:"includedCarrierCodes,omitempty"`
 	ExcludedCarrierCodes []string `json:"excludedCarrierCodes,omitempty"`
 }
 

@@ -1,4 +1,4 @@
-module github.com/fakovacic/amadeus
+module github.com/wei-zero/amadeus
 
 go 1.18
 
