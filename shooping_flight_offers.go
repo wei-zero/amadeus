@@ -44,8 +44,16 @@ type SearchCriteria struct {
 }
 
 type FlightFilters struct {
-	CabinRestrictions   []CabinRestrictions `json:"cabinRestrictions,omitempty"`
-	CarrierRestrictions CarrierRestrictions `json:"carrierRestrictions,omitempty"`
+	CabinRestrictions     []CabinRestrictions   `json:"cabinRestrictions,omitempty"`
+	CarrierRestrictions   CarrierRestrictions   `json:"carrierRestrictions,omitempty"`
+	ConnectionRestriction ConnectionRestriction `json:"connectionRestriction,omitempty"`
+}
+
+type ConnectionRestriction struct {
+	MaxNumberOfConnections int  `json:"maxNumberOfConnections,omitempty"`
+	NonStopPreferred       bool `json:"nonStopPreferred,omitempty"`
+	AirportChangeAllowed   bool `json:"airportChangeAllowed,omitempty"`
+	TechnicalStopsAllowed  bool `json:"technicalStopsAllowed,omitempty"`
 }
 
 type CabinRestrictions struct {
