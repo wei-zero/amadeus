@@ -50,7 +50,7 @@ type FlightFilters struct {
 }
 
 type ConnectionRestriction struct {
-	MaxNumberOfConnections int  `json:"maxNumberOfConnections,omitempty"`
+	MaxNumberOfConnections int  `json:"maxNumberOfConnections"`
 	NonStopPreferred       bool `json:"nonStopPreferred,omitempty"`
 	AirportChangeAllowed   bool `json:"airportChangeAllowed,omitempty"`
 	TechnicalStopsAllowed  bool `json:"technicalStopsAllowed,omitempty"`
