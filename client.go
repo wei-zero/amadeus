@@ -2,7 +2,6 @@ package amadeus
 
 import (
 	"errors"
-	"fmt"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -418,7 +417,7 @@ func (a *Amadeus) Do(req Request, resp *Response, reqType string) error {
 	// fmt.Println("------------------")
 	// fmt.Println(rsp.StatusCode)
 	// fmt.Println(req.GetURL(baseURL, reqType))
-	fmt.Println(string(b))
+	// fmt.Println(string(b))
 	// fmt.Println("------------------")
 
 	// decode response to struct
